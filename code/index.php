@@ -138,3 +138,65 @@
     }
     $my_num = printStringReturnNumber();
     echo $my_num;
+
+
+    //16.Функции
+    //1
+    echo "<br>" . "<br>" . "Task 16" . "<br>";
+    function increaseEnthusiasm($str = "")
+    {
+        return $str . "!";
+    }
+    echo increaseEnthusiasm("Hello");
+
+    //2
+    echo "<br>";
+    function repeatThreeTimes($str = "")
+    {
+        $i = 0;
+        while($i < 3)
+        {
+            echo $str . " ";
+            $i ++;
+        }
+    }
+
+    //3
+    echo repeatThreeTimes("Hallo");
+
+    //4
+    echo "<br>";
+    echo increaseEnthusiasm(repeatThreeTimes("Bonjour"));
+
+    //5
+    echo "<br>";
+    function cut($st = "", $num = 10)
+    {
+        return substr($st , 0, $num);
+    }
+
+    //6
+    $arr6 = [1, 2, 3, 4, 5];
+    function rec($arr6, $i)
+    {
+        if($i >= 5)
+            return;
+        echo $arr6[$i] . " ";
+        $i ++;
+        rec($arr6, $i);
+    }
+    echo rec($arr6, 0);
+
+    //7
+    function SumOfNumber($n)
+    {
+        $s = 0;
+        while($n > 0)
+        {
+            $s += ($n % 10);
+            $n /= 10;
+        }
+        if($s > 9)
+            SumOfNumber($s);
+        return $s;
+    }
