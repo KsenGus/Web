@@ -32,3 +32,8 @@
     $days = 16;
     $days_per_language = ($days * $months) / $num_languages;
     echo $days_per_language;
+    
+    
+    //12.Степени
+    echo "<br>" . "<br>" . "Task 12" . "<br>";
+    echo 8**2;
