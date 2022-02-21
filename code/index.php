@@ -127,3 +127,14 @@
         $count++;
     }
     echo "<br>" . $count;
+    
+    
+    //15.Функции
+    echo "<br>" . "<br>" . "Task 15" . "<br>";
+    function printStringReturnNumber()
+    {
+        echo "String is printed! ";
+        return 1;
+    }
+    $my_num = printStringReturnNumber();
+    echo $my_num;
