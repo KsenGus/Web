@@ -9,3 +9,17 @@
     $order .= " and coffee";
     //Don't change the line below
     echo "\nYour order is: $very_bad_unclear_name.";
+    
+
+    //2.Числа
+    echo "<br>" . "<br>" . "Task 2" . "<br>";
+    $var1 = 1;
+    echo $var1 . "<br>";
+    $var2 = 2;
+    echo $var2 . "<br>";
+    $var3 = 5.28;
+    echo $var3 . "<br>";
+    echo 3*4 . "<br>";
+    $last_month = 1187.23;
+    $this_month = 1089.98;
+    echo $last_month - $this_month;
