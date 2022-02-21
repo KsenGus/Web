@@ -352,3 +352,37 @@
     }
     for($i = 1; $i < 20; $i++)
         echo $pyr[$i] . "<br>";
+    
+
+    //20.Комбинация функций
+    //1
+    echo "<br>" . "Task 20" ."<br>";
+    $arr13 = [2,4,6,8,10];
+    $m = array_sum($arr13) / count($arr13);
+    echo $m;
+
+    //2
+    echo "<br>";
+    $from = 1;
+    $to = 100;
+    $sum2 = ($from + $to)/2 * ($to - $from + 1);
+    echo $sum2;
+
+    //3
+    echo "<br>";
+    $arr14 = [1,4,9,16,25];
+    $ar14 = (array_map('sqrt' , $arr14));
+    print_r($ar14);
+
+    //4
+    echo "<br>";
+    $letters = range('a', 'z');
+    $numbers = range(1, 26);
+    $arr15 = array_combine($letters, $numbers);
+    print_r($arr15);
+
+    //5
+    echo "<br>";
+    $string = '1234567890';
+    $arr16 = str_split($string , 2);
+    echo array_sum($arr16);
