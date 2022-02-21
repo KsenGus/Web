@@ -32,7 +32,7 @@
     $days = 16;
     $days_per_language = ($days * $months) / $num_languages;
     echo $days_per_language;
-    
+
 
     //12.Степени
     echo "<br>" . "<br>" . "Task 12" . "<br>";
@@ -50,3 +50,80 @@
     $answer -= $my_num;
     echo $answer;
     
+    
+    //14.Математические функции
+    //14.1.Работа с %
+    echo "<br>" . "<br>" . "Task 14" . "<br>";
+    $a = 11;
+    $b = 3;
+    echo $a % $b;
+    if(($a % $b) == 0)
+        echo "<br>" . "Делится";
+    else echo "<br>" . "Делится с остатком. Остаток = " . ($a % $b);
+
+    //14.2.Работа со степенью и корнем
+    $st = pow(2, 10);
+    echo "<br>". $st;
+    echo "<br>" . sqrt(245);
+    $arr = [4, 2, 5, 19, 13, 0, 10];
+    $s = 0;
+    foreach ($arr as $item)
+        $s += $item**2;
+    echo "<br>" . sqrt($s);
+
+    //14.3.Работа с функциями округления
+    echo  "<br>" . round(sqrt(379),0) . "\n\n" ;
+    echo round(sqrt(379), 1) . "\n\n" ;
+    echo round(sqrt(379), 2);
+    $arr1 = ["floor" => floor(sqrt(587)) , "ceil" => ceil(sqrt(587))];
+    echo "<br>" . $arr1["floor"] . "<br>" . $arr1["ceil"];
+    echo  "<br>" . round(sqrt(587), 0);
+
+    //14.4.Работа с min и max
+    echo "<br>" . min(4,-2, 5, 19, -130, 0, 10);
+    echo "<br>" . max(4, -2, 5, 19, -130, 0, 10);
+
+    //14.5.Работа с рандомом
+    echo "<br>" . rand(1, 100) . "<br>";
+    $arr2 = [];
+    for($i = 0; $i < 10; $i++)
+    {
+        $arr[$i] = rand(1, 100);
+        echo $arr[$i] . " ";
+    }
+
+    //14.6.Работа с модулем
+    echo "<br>" . abs($a - $b) . "<br>";
+    $arr3 = [1, 2, -1, -2, 3, -3];
+    for($i = 0; $i < 6; $i++)
+    {
+        $arr3[$i] = abs($arr3[$i]);
+        echo $arr3[$i] . " ";
+    }
+    echo "<br>";
+
+    //14.7.Общее
+    //Делители
+    $num = 30;
+    $arr4 = [];
+    $k = 30;
+    for($i = 0; $i < $num; $i++)
+    {
+        if(($num % $k) == 0)
+        {
+            $arr4[$i] = ($num / $k);
+            echo $arr4[$i] . " ";
+        }
+        $k--;
+    }
+
+    //Сумма элементов
+    $arr5 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    $sum = 0;
+    $count = 0;
+    while($sum <= 10)
+    {
+        $sum += $arr5[$count];
+        $count++;
+    }
+    echo "<br>" . $count;
