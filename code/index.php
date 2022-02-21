@@ -339,3 +339,16 @@
     $arr12 = [1,2,3];
     if (count($arr12) == 3)
         echo array_sum($arr12);
+    
+
+    //19.Циклы
+    echo "<br>" . "<br>" . "Task 19" . "<br>";
+    $pyr = [];
+    $x = "";
+    for($i = 0; $i < 20; $i++)
+    {
+        $pyr[$i] = $x;
+        $x .= "x";
+    }
+    for($i = 1; $i < 20; $i++)
+        echo $pyr[$i] . "<br>";
