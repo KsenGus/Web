@@ -285,3 +285,57 @@
     //9
     echo $arr11[count($arr11) - 1] . " ";
     echo $arr11[count($arr11) - 2];
+    
+
+    //18. Конструкция if else
+    //1
+    echo "<br>" . "<br>" . "Task 18" . "<br>";
+    function TwoNumSum($a , $b)
+    {
+        if(($a + $b) > 10)
+            return true;
+        else return false;
+    }
+
+    //2
+    function TwoNumEq($a , $b)
+    {
+        if($a == $b)
+            return true;
+        else return false;
+    }
+
+    //3
+    $test = 0;
+    if ($test == 0)
+    {
+        echo 'верно';
+    }
+
+    //4
+    echo "<br>";
+    $age = 19;
+    function DigitSum($n)
+    {
+        $s = 0;
+        while($n > 0)
+        {
+            $s += $n % 10;
+            $n = floor($n / 10);
+        }
+        return $s;
+    }
+    if($age < 10 || $age > 99)
+        echo "Не входит в диапазон";
+    else
+    {
+        if(DigitSum($age) < 10)
+            echo "Сумма однозначна";
+        else echo "Сумма двузначна";
+    }
+
+    //5
+    echo "<br>";
+    $arr12 = [1,2,3];
+    if (count($arr12) == 3)
+        echo array_sum($arr12);
