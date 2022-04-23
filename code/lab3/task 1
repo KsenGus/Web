@@ -1,0 +1,9 @@
+<?php
+    $str = 'ahb acb aeb aeeb adcb axeb';
+    $reg = "/a..b/";
+    echo preg_match($reg , $str);
+
+    echo "<br>";
+    $str1 = 'a1b2c3';
+    $reg = "/\d/";
+    echo preg_replace_callback($reg , function(array $match) {return ((int)($match[0]) ** 3);}, $str1);
